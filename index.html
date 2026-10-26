@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Pattu 💜 | Our Little Universe</title>
+<meta name="description" content="A personal birthday tribute to Abaranji Vedha S S, lovingly called Pattu — a little universe of memories, love, and gratitude.">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--f:'Libre Baskerville',Georgia,serif;--lav:#B8A1E3;--soft:#E6DDF7;--deep:#72549C;--plum:#30213F;--royal:#594078;--gold:#D4B779;--w:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px;height:100%}
+body{margin:0;color:var(--w);font:400 clamp(1rem,.95rem + .3vw,1.12rem)/1.75 var(--f);background:linear-gradient(180deg,#30213F,#594078 35%,#30213F 60%,#72549C 85%,#30213F);background-attachment:fixed;overflow-x:hidden}
+h1,h2,h3{font-family:var(--f);font-weight:600;line-height:1.15;margin:0 0 .6em}
+.script{font-style:italic;font-weight:400;line-height:1.25}
+h1,h2,h3,p{overflow-wrap:break-word}
+.gifts{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:2rem}
+.gift{font:inherit;color:var(--w);cursor:pointer;text-align:center;transition:transform .4s,box-shadow .4s,opacity .4s}
+.gift:hover{transform:translateY(-6px);box-shadow:0 0 40px rgba(184,161,227,.6)}
+.gift .em{font-size:2.6rem;display:block}.gift h3{margin:.4em 0 0;font-size:1.4rem}
+.gift.pick{border-color:var(--gold);box-shadow:0 0 44px rgba(212,183,121,.55)}
+#giftmsg{margin-top:1.5rem;font-size:clamp(1.3rem,4vw,1.8rem);display:none}
+#giftmsg.on{display:block;animation:up 1.2s}
+h2{font-size:clamp(2rem,6vw,3.4rem)}
+section{padding:clamp(4rem,10vw,8rem) 1.25rem;position:relative}
+.wrap{max-width:900px;margin:auto}.c{text-align:center}
+.glass{background:rgba(230,221,247,.16);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.45);border-radius:24px;box-shadow:0 12px 40px rgba(48,33,63,.35),inset 0 1px 0 rgba(255,255,255,.25);padding:clamp(1.25rem,4vw,2.25rem)}
+.btn{font:500 1rem var(--f);color:var(--w);background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.55);border-radius:99px;padding:.85rem 1.8rem;cursor:pointer;min-height:48px;backdrop-filter:blur(14px);transition:background .3s,box-shadow .3s,transform .3s}
+.btn:hover{background:rgba(255,255,255,.28);box-shadow:0 0 28px rgba(184,161,227,.7);transform:translateY(-2px)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.rv{opacity:0;transform:translateY(24px);transition:opacity 1s ease,transform 1s ease}.rv.in{opacity:1;transform:none}
+/* nav */
+nav{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);left:50%;transform:translateX(-50%);z-index:20;display:flex;gap:.2rem;padding:.3rem;max-width:calc(100% - 16px);overflow-x:auto;border-radius:99px;background:rgba(48,33,63,.5);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.4)}
+nav a{color:var(--w);text-decoration:none;font-size:.85rem;padding:.5rem .8rem;border-radius:99px;white-space:nowrap}
+nav a:hover{background:rgba(255,255,255,.2)}
+/* arch */
+.arch{position:relative;width:min(360px,82vw);aspect-ratio:3/4;margin:auto;border-radius:6px;padding:12px;background:rgba(230,221,247,.12);border:2px solid var(--gold);box-shadow:0 0 0 6px rgba(255,255,255,.12),0 0 60px rgba(184,161,227,.55)}
+.arch:before{content:"";position:absolute;inset:-14px;border-radius:10px;border:1px solid rgba(212,183,121,.55);pointer-events:none}
+.ph{width:100%;height:100%;border-radius:inherit;overflow:hidden;background:rgba(230,221,247,.16);display:grid;place-items:center;position:relative}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph svg{opacity:.7}
+.arch .ph{border-radius:2px;outline:1px solid rgba(212,183,121,.7);outline-offset:-1px}
+/* intro */
+#intro{position:fixed;inset:0;z-index:50;display:grid;place-items:center;text-align:center;padding:1.5rem;background:radial-gradient(ellipse at 50% 20%,#72549C,#30213F 70%);transition:opacity 1s,visibility 1s}
+#intro.gone{opacity:0;visibility:hidden}
+#intro .arch{position:absolute;inset:6vh auto auto 50%;transform:translateX(-50%);width:min(560px,94vw);height:88vh;aspect-ratio:auto;opacity:.5}
+#intro .in2{position:relative;max-width:640px}
+.s1,.s2,.s3,.s4{opacity:0;animation:up 1.4s forwards}
+.s1{animation-delay:.4s}.s2{animation-delay:2s}.s3{animation-delay:3s}.s4{animation-delay:3.8s}
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.skip{position:absolute;right:1rem;top:calc(env(safe-area-inset-top,0px) + 1rem);z-index:2;background:none;border:0;color:var(--w);text-decoration:underline;cursor:pointer;font:inherit;padding:.6rem}
+/* petals */
+.petal{position:fixed;top:-30px;width:12px;height:16px;border-radius:70% 0 70% 0;background:linear-gradient(135deg,#E6DDF7,#B8A1E3);opacity:.6;pointer-events:none;z-index:1;animation:fall linear infinite}
+.petal.g{background:var(--gold);width:5px;height:5px;border-radius:50%}
+@keyframes fall{to{transform:translate3d(60px,110vh,0) rotate(500deg)}}
+/* hero */
+#home .wrap{display:grid;gap:2.5rem;align-items:center;min-height:80vh}
+@media(min-width:800px){#home .wrap{grid-template-columns:1fr 1fr}.arch{margin:0 auto}}
+#home h2{font-size:clamp(2.6rem,7vw,4.4rem)}
+/* universe */
+#words .line{font-family:var(--f);font-size:clamp(1.4rem,4vw,2rem);margin:1.6rem 0}
+#words .final{font-size:clamp(1.5rem,4.5vw,2.3rem);margin-top:3rem}
+/* timeline */
+.tl{position:relative;padding-left:2.2rem;display:grid;gap:2rem}
+.tl:before{content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:linear-gradient(var(--lav),var(--gold),var(--lav));box-shadow:0 0 14px var(--lav)}
+.ch{position:relative}.ch:before{content:"";position:absolute;left:calc(-2.2rem + 1px);top:1.6rem;width:16px;height:16px;border-radius:50%;background:var(--gold);box-shadow:0 0 14px var(--gold)}
+.ch .when{color:var(--gold);font-weight:500;margin:0 0 .3rem}
+.ch h3{font-size:clamp(1.5rem,4vw,2rem)}
+.ch p{margin:.8em 0}
+.ch .ph{height:200px;border-radius:16px;margin-top:1.2rem}
+.date{font-family:var(--f);font-size:clamp(2rem,7vw,3rem);color:var(--gold)}
+.pins{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.pin{padding:.4rem .9rem;border-radius:99px;border:1px solid var(--gold);background:rgba(255,255,255,.1);font-size:.9rem}
+.tag{font-family:var(--f);font-size:clamp(2rem,6vw,2.8rem);color:var(--w)}
+/* little things */
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{transition:transform .4s,box-shadow .4s}.card:hover{transform:translateY(-6px);box-shadow:0 0 40px rgba(184,161,227,.6)}
+.card svg{color:var(--gold);margin-bottom:.4rem}.card h3{font-size:1.5rem;margin-bottom:.3em}.card p{margin:0}
+/* gallery */
+.gal{columns:2 150px;column-gap:.8rem}
+@media(min-width:800px){.gal{columns:3}}
+.gi{break-inside:avoid;margin:0 0 .8rem;padding:0;border:0;background:none;width:100%;display:block;cursor:pointer;color:var(--w);text-align:left}
+.gi .ph{border-radius:18px 18px 0 0;aspect-ratio:var(--r,3/4)}
+.gi span{display:block;padding:.6rem .8rem;background:rgba(48,33,63,.6);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.35);border-top:0;border-radius:0 0 18px 18px;font-size:.88rem}
+#lb{position:fixed;inset:0;z-index:40;background:rgba(30,18,44,.92);display:none;place-items:center;padding:1rem}
+#lb.on{display:grid}
+#lb .box{width:min(520px,100%);text-align:center}
+#lb .ph{aspect-ratio:3/4;max-height:68vh;margin:auto;border-radius:20px}
+#lb .ctl{display:flex;justify-content:space-between;align-items:center;gap:.6rem;margin-top:1rem}
+.ib{width:48px;height:48px;border-radius:50%;padding:0;display:grid;place-items:center}
+/* envelope */
+.env{width:min(340px,86vw);margin:2rem auto 0;position:relative}
+.env .body{height:200px;border-radius:14px;border:2px solid var(--gold);display:grid;place-items:center;font-size:3rem}
+.letter{max-height:0;overflow:hidden;opacity:0;transition:max-height 1.6s ease,opacity 1.2s ease .3s;text-align:left}
+.letter.open{max-height:3000px;opacity:1;margin-top:1.5rem}
+.letter p{margin:.9em 0}
+.env.open .body{transform:translateY(-6px) rotate(-2deg);box-shadow:0 0 40px var(--lav)}
+.env .body{transition:transform .8s}
+/* countdown */
+.cd{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}
+.cd .glass{min-width:74px;padding:1rem .6rem;text-align:center}
+.cd b{display:block;font:600 clamp(2rem,8vw,3rem)/1 var(--f);text-shadow:0 0 18px var(--lav)}
+.cd small{font-size:.85rem}
+/* finale */
+#finale{background:radial-gradient(ellipse at 50% 0,rgba(184,161,227,.45),transparent 65%)}
+#finale .glass p{margin:.9em 0}
+#music{position:fixed;right:14px;bottom:calc(env(safe-area-inset-bottom,0px) + 14px);z-index:30}
+footer{padding:2rem 1rem;text-align:center;font-size:.9rem}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-delay:0s!important;transition-duration:.01s!important;scroll-behavior:auto!important}.petal{display:none}.rv{opacity:1;transform:none}}
+.lamp{position:fixed;top:0;z-index:5;pointer-events:none;width:clamp(46px,8vw,96px);transform-origin:top center;animation:sway 7s ease-in-out infinite}
+.lamp.l{left:max(6px,1.5vw)}.lamp.r{right:max(6px,1.5vw);animation-delay:-3s}
+.lamp .glow{animation:flick 3s ease-in-out infinite}.lamp .flame{animation:flick 1.6s ease-in-out infinite;transform-origin:50px 150px}
+@keyframes sway{50%{transform:rotate(2.5deg)}0%,100%{transform:rotate(-2.5deg)}}
+@keyframes flick{0%,100%{opacity:.85}45%{opacity:1}70%{opacity:.7}}
+.ch .collage{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-top:1.2rem}
+.ch .collage .ph{height:auto;margin:0;aspect-ratio:3/4;border-radius:14px}.ch .collage .ph:first-child{grid-column:span 2;aspect-ratio:4/3}
+.ch .ph{height:auto;aspect-ratio:4/3}
+#lbph img{object-fit:contain}#lbph{background:none}
+.pl{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:2rem}
+.pl a{color:var(--w);text-decoration:none;display:flex;align-items:center;gap:1rem;text-align:left}
+.pl a:hover{box-shadow:0 0 40px rgba(184,161,227,.6)}
+.pl .pb{flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:var(--plum);font-size:1.3rem}
+.pl small{display:block;opacity:.9}
+.sp{display:flex;align-items:center;gap:1rem;text-align:left;padding:1rem}
+.sp .art{flex:none;width:64px;height:64px;border-radius:10px;display:grid;place-items:center;font-size:1.8rem;background:linear-gradient(135deg,var(--lav),var(--royal));box-shadow:0 0 18px rgba(184,161,227,.6)}
+.sp .meta{flex:1;min-width:0}.sp b{display:block}.sp small{display:block;opacity:.9}
+.sp .bar{height:4px;border-radius:4px;background:rgba(255,255,255,.3);margin-top:.6rem;overflow:hidden}.sp .bar i{display:block;height:100%;width:0;background:var(--gold)}
+.pbtn{flex:none;width:52px;height:52px;border-radius:50%;border:0;cursor:pointer;background:var(--gold);color:var(--plum);font-size:1.1rem}
+.pbtn:hover{box-shadow:0 0 22px var(--gold)}
+@media(prefers-reduced-motion:reduce){.lamp,.lamp *{animation:none!important}}
+.bunting{position:absolute;top:0;left:0;right:0;height:60px;display:flex;justify-content:space-around;pointer-events:none;z-index:2}
+.bunting:before{content:"";position:absolute;top:5px;left:0;right:0;border-top:2px solid var(--gold)}
+.bunting i{display:block;margin-top:5px;border-left:clamp(10px,2.4vw,20px) solid transparent;border-right:clamp(10px,2.4vw,20px) solid transparent;border-top:clamp(22px,4.5vw,38px) solid #fff;filter:drop-shadow(0 4px 6px rgba(48,33,63,.4));transform-origin:top;animation:sway 5s ease-in-out infinite}
+.bunting i:nth-child(even){animation-delay:-2s}
+#home .bunting{top:58px;position:absolute}
+.balloons{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.balloons i{position:absolute;bottom:-90px;width:clamp(36px,6vw,58px);aspect-ratio:.8;border-radius:50% 50% 48% 48%;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.7),var(--c) 55%);opacity:.85;animation:rise linear infinite}
+.balloons i:after{content:"";position:absolute;left:50%;top:100%;height:70px;border-left:1px solid rgba(255,255,255,.6)}
+@keyframes rise{to{transform:translateY(-115vh) rotate(6deg)}}
+.cake{display:block;margin:0 auto .5rem;filter:drop-shadow(0 0 22px rgba(184,161,227,.8))}
+#conf{position:fixed;inset:0;width:100%;height:100%;z-index:60;pointer-events:none}
+#intro h1{text-shadow:0 0 28px rgba(212,183,121,.65)}
+@media(prefers-reduced-motion:reduce){.balloons{display:none}.bunting i{animation:none}}
+</style>
+</head>
+<body>
+<div id="intro" role="dialog" aria-label="Opening">
+ <div class="arch"></div><div class="bunting" aria-hidden="true"></div><div class="balloons" aria-hidden="true"></div>
+ <button class="skip" id="skip">Skip intro</button>
+ <div class="in2">
+  <p class="script s1" style="font-size:clamp(1.8rem,6vw,2.6rem);margin:0 0 1rem">For the girl who became my entire universe…</p>
+  <svg class="cake s2" viewBox="0 0 160 130" width="150" aria-hidden="true"><defs><linearGradient id="cg" x1="0" x2="1"><stop offset="0" stop-color="#9a7bd0"/><stop offset=".5" stop-color="#E6DDF7"/><stop offset="1" stop-color="#9a7bd0"/></linearGradient></defs><rect x="20" y="82" width="120" height="38" rx="8" fill="url(#cg)"/><rect x="38" y="52" width="84" height="34" rx="8" fill="#B8A1E3"/><path d="M38 62q10 12 21 0t21 0 21 0 21 0v-8H38z" fill="#fff"/><path d="M20 92q15 12 30 0t30 0 30 0 30 0" fill="none" stroke="#D4B779" stroke-width="3"/><g stroke="#D4B779" stroke-width="5" stroke-linecap="round"><path d="M58 52V32M80 52V28M102 52V32"/></g><g fill="#ffd36e"><ellipse class="flame" cx="58" cy="24" rx="5" ry="9"/><ellipse class="flame" cx="80" cy="20" rx="5" ry="9" style="animation-delay:-.5s"/><ellipse class="flame" cx="102" cy="24" rx="5" ry="9" style="animation-delay:-1s"/></g></svg>
+  <h1 class="s2" style="font-size:clamp(2.6rem,10vw,5rem);margin:.2em 0">Happy Birthday, Pattu</h1>
+  <p class="s3" style="color:var(--gold);font-size:1.2rem;margin:0 0 .5rem">October 29, 2026</p>
+  <p class="s3">A little universe for the girl words could never describe.</p>
+  <button class="btn s4" id="enter">Enter Our Little Universe ♡</button>
+ </div>
+</div>
+
+<canvas id="conf" aria-hidden="true"></canvas>
+<nav aria-label="Sections">
+ <a href="#home">Home</a><a href="#story">Our Story</a><a href="#little">Little Things</a><a href="#memories">Memories</a><a href="#playlist">Playlist</a><a href="#wish">Birthday Wish</a><a href="#gifts">Gifts</a>
+</nav>
+
+<div class="lamp l"><svg viewBox="0 0 100 230" aria-hidden="true"><defs><radialGradient id="g1"><stop offset="0" stop-color="#ffe6a8" stop-opacity=".95"/><stop offset="1" stop-color="#D4B779" stop-opacity="0"/></radialGradient><linearGradient id="b1" x1="0" x2="1"><stop offset="0" stop-color="#9c7a38"/><stop offset=".5" stop-color="#f3dea0"/><stop offset="1" stop-color="#9c7a38"/></linearGradient></defs><line x1="50" y1="0" x2="50" y2="72" stroke="#D4B779" stroke-width="2" stroke-dasharray="5 3"/><circle class="glow" cx="50" cy="150" r="78" fill="url(#g1)"/><path d="M44 68h12l3 10H41z" fill="url(#b1)"/><path d="M28 82Q50 66 72 82L67 122Q50 134 33 122z" fill="url(#b1)" stroke="#7d5f26"/><path d="M22 122h56q-3 24-28 30-25-6-28-30z" fill="url(#b1)" stroke="#7d5f26"/><ellipse class="flame" cx="50" cy="140" rx="6" ry="12" fill="#ffd36e"/><path d="M50 152v14" stroke="#D4B779" stroke-width="3"/><circle cx="50" cy="172" r="5" fill="url(#b1)"/></svg></div><div class="lamp r"><svg viewBox="0 0 100 230" aria-hidden="true"><defs><radialGradient id="g2"><stop offset="0" stop-color="#ffe6a8" stop-opacity=".95"/><stop offset="1" stop-color="#D4B779" stop-opacity="0"/></radialGradient><linearGradient id="b2" x1="0" x2="1"><stop offset="0" stop-color="#9c7a38"/><stop offset=".5" stop-color="#f3dea0"/><stop offset="1" stop-color="#9c7a38"/></linearGradient></defs><line x1="50" y1="0" x2="50" y2="72" stroke="#D4B779" stroke-width="2" stroke-dasharray="5 3"/><circle class="glow" cx="50" cy="150" r="78" fill="url(#g2)"/><path d="M44 68h12l3 10H41z" fill="url(#b2)"/><path d="M28 82Q50 66 72 82L67 122Q50 134 33 122z" fill="url(#b2)" stroke="#7d5f26"/><path d="M22 122h56q-3 24-28 30-25-6-28-30z" fill="url(#b2)" stroke="#7d5f26"/><ellipse class="flame" cx="50" cy="140" rx="6" ry="12" fill="#ffd36e"/><path d="M50 152v14" stroke="#D4B779" stroke-width="3"/><circle cx="50" cy="172" r="5" fill="url(#b2)"/></svg></div>
+<main>
+<section id="home"><div class="bunting" aria-hidden="true"></div><div class="wrap">
+ <div class="arch rv"><div class="ph" data-src="k1" data-alt="Portrait of Pattu"></div></div>
+ <div class="rv">
+  <h2 class="script">Happy Birthday, my girlfriend</h2>
+  <p style="font-size:1.15em">Happy Birthday to the girl who makes every ordinary day feel like a celebration.</p>
+  <p style="font-size:1.15em">You are my favorite hello, my hardest goodbye, and my calmest place in between.</p>
+  <p style="font-size:1.15em">With you, even the quiet moments feel full of love.</p>
+  <p style="font-size:1.15em">Today the world celebrates the day it got you, and I celebrate that you are mine.</p>
+  <p class="tag">My favorite human. My safest place. My Pattu.</p>
+ </div>
+</div></section>
+
+<section id="words"><div class="wrap c">
+ <div class="glass">
+  <h2 class="script rv" style="font-size:clamp(2.6rem,8vw,4.4rem)">How do I describe you?</h2>
+  <div id="lines"></div>
+ </div>
+</div></section>
+
+<section id="story"><div class="wrap">
+ <h2 class="c rv">Every little chapter brought me closer to you.</h2>
+ <div class="tl" id="tl"></div>
+</div></section>
+
+<section id="little"><div class="wrap">
+ <h2 class="c rv">You are made of a thousand little things I adore.</h2>
+ <div class="grid" id="cards"></div>
+</div></section>
+
+<section id="memories"><div class="wrap">
+ <h2 class="c rv">A little collection of my favorite moments with you.</h2>
+ <div class="gal" id="gal"></div>
+</div></section>
+
+<section id="playlist"><div class="wrap c">
+ <h2 class="rv">Songs for you, Pattu.</h2>
+ <p>Press play on these while you scroll.</p>
+ <div class="pl">
+  <div class="glass sp" data-id="pavazha"><div class="art" aria-hidden="true">♪</div><div class="meta"><b>Pavazha Malli</b><small>Sai Abhyankkar, Shruti Haasan</small><div class="bar"><i></i></div></div><button class="pbtn" aria-label="Play or pause Pavazha Malli">▶</button></div>
+  <div class="glass sp" data-id="radhima"><div class="art" aria-hidden="true">♪</div><div class="meta"><b>Radhima</b><small>For Pattu</small><div class="bar"><i></i></div></div><button class="pbtn" aria-label="Play or pause Radhima">▶</button></div>
+ </div>
+ <p id="plmsg" role="status" aria-live="polite"></p>
+</div></section>
+
+<section id="wish"><div class="wrap c">
+ <h2 class="script rv" style="font-size:clamp(2.4rem,8vw,4rem)">Pattu, I made something just for you.</h2>
+ <div class="env" id="env"><div class="body glass" aria-hidden="true">💜</div></div>
+ <button class="btn" id="open" aria-expanded="false" aria-controls="letter" style="margin-top:1.5rem">Open Your Little Surprise ♡</button>
+ <div class="letter glass" id="letter" role="region" aria-label="Birthday letter"></div>
+</div></section>
+
+<section id="gifts"><div class="wrap c">
+ <h2 class="rv">Pick a little gift, Pattu.</h2>
+ <div class="gifts">
+  <button class="glass gift" type="button"><span class="em" aria-hidden="true">🍫</span><h3>Chocolate</h3></button>
+  <button class="glass gift" type="button"><span class="em" aria-hidden="true">🌸</span><h3>Perfume</h3></button>
+  <button class="glass gift" type="button"><span class="em" aria-hidden="true">🍽️</span><h3>Meghana Foods Dine-in</h3></button>
+ </div>
+ <p class="glass script" id="giftmsg" role="status" aria-live="polite">My Vedhuu your gift is on the way along with your Sree</p>
+</div></section>
+
+<section id="count"><div class="wrap c">
+ <div class="glass">
+  <h2 id="cdmsg">Counting down to your special day, Pattu.</h2>
+  <div class="cd" id="cd" role="timer"></div>
+ </div>
+</div></section>
+
+<section id="finale"><div class="wrap c">
+ <div class="arch rv"><div class="ph" data-src="k16" data-alt="Pattu, birthday portrait"></div></div>
+ <div class="glass rv" style="margin-top:3rem;text-align:left" id="fin"></div>
+ <p class="script rv" style="font-size:clamp(2.2rem,7vw,3.8rem);margin:3rem 0 1rem">Billions of generations. Still not enough words for you.</p>
+ <p class="rv" style="font-size:1.4rem;font-family:var(--f)">Happy Birthday, Pattu. 💜</p>
+</div></section>
+</main>
+<footer>Made with love, for Pattu.</footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+ <div class="box">
+  <div class="ph" id="lbph"></div>
+  <p id="lbcap" style="margin:.8rem 0 0"></p>
+  <div class="ctl">
+   <button class="btn ib" id="prev" aria-label="Previous photo">‹</button>
+   <button class="btn" id="close">Close</button>
+   <button class="btn ib" id="next" aria-label="Next photo">›</button>
+  </div>
+ </div>
+</div>
+
+<script>
+const IM={"k1": "images/k1.jpg", "k2": "images/k2.jpg", "k3": "images/k3.jpg", "k4": "images/k4.jpg", "k5": "images/k5.jpg", "k6": "images/k6.jpg", "k7": "images/k7.jpg", "k8": "images/k8.jpg", "k9": "images/k9.jpg", "k10": "images/k10.jpg", "k11": "images/k11.jpg", "k12": "images/k12.jpg", "k13": "images/k13.jpg", "k14": "images/k14.jpg", "k15": "images/k15.jpg", "k16": "images/k16.jpg", "k17": "images/k17.jpg", "k18": "images/k18.jpg"};const POS={"k1": "50% 30%", "k4": "50% 40%", "k5": "50% 38%", "k6": "30% 25%", "k18": "50% 35%"};
+const IMG='<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-8 8"/></svg>';
+const ICON='<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21C5 15 3 11.500 3 8.500A4.500 4.500 0 0 1 12 6a4.500 4.500 0 0 1 9 2.500C21 11.500 19 15 12 21z"/></svg>';
+const $=s=>document.querySelector(s);
+const paras=t=>t.split('\n\n').map(p=>'<p>'+p.replace(/\n/g,'<br>')+'</p>').join('');
+const R={k5:'4/3',k17:'4/3',k18:'4/3',k6:'9/16',k1:'2/3'};const GAL=[['k1','My favorite person.'],['k5','School days, unforgettable beginnings.'],['k2','Pure smile, pure Pattu.'],['k18','College days, our own little adventures.'],['k7','Bangalore gave us new places and new memories.'],['k4','Draped in elegance.'],['k13','Lost in a good book.'],['k10','Another little memory with you.'],['k16','Every ordinary moment feels special with you.'],['k6','Sunshine and palm trees.'],['k9','Another little memory with you.'],['k3','Little moments, big smiles.'],['k17','Sweet moments together.'],['k8','The way we look at each other.'],['k12','Food, always.'],['k14','Wandering together.'],['k15','A quiet moment, a big heart.'],['k11','Café stops along the way.']].map(g=>({src:g[0],cap:g[1],r:R[g[0]]||'3/4'}));
+
+/* photos: show placeholder, swap in the real image only if the file exists */
+function fill(el,src,alt){el.innerHTML=IMG;const u=IM[src];if(!u)return;const im=new Image();im.alt=alt;im.decoding='async';im.style.objectPosition=POS[src]||'50% 25%';im.onload=()=>{el.innerHTML='';el.appendChild(im)};im.src=u}
+document.querySelectorAll('[data-src]').forEach(e=>fill(e,e.dataset.src,e.dataset.alt));
+
+/* words */
+const L=['Your loyalty.','Your caring heart.','Your kindness.','Your little childish moments.','The way you manage things when life becomes difficult.','The little things you do that might look ordinary to the world, but mean everything to me.'];
+$('#lines').innerHTML=L.map(t=>'<p class="line rv">'+t+'</p>').join('')+'<p class="line final script rv" style="font-size:clamp(1.8rem,5.5vw,2.8rem)">If I spent billions of generations trying to describe you, I would still run out of words before I ran out of reasons to love you.</p>';
+
+/* story */
+const CH=[
+['School days, when I was in 11th grade','The Instagram beginning',`We were still school students when our story quietly started on Instagram.\n\nIt began with conversations, little moments, and a friendship that neither of us knew would become so important.\n\nBack then, I called you my friend. Maybe I was trying to convince myself of that, too.\n\nSomewhere inside, I already had a little wish to love you. But I never found the courage to propose.`,'k5'],
+['A random day','The day your sisters teased us',`I still remember that random day when your sisters held your hands tightly, mimicked you, and introduced themselves as “Pattu’s mother” just to find out whether I loved you.\n\nAnd what did I do?\n\nI refused.\n\nI said I saw you as my friend.\n\nBut the funny little truth was that a part of me had already wished for something more. I just wasn’t ready to say it out loud.`,null],
+['<span class="date">19 · 07 · 2021</span>','The day we had to be stronger than our circumstances.',`On July 19, 2021, you had to face your parents about our relationship because of the problems and negativity surrounding us.\n\nIt wasn’t an easy moment.\n\nBut you handled things with courage, and somehow, you managed everything when it mattered most.\n\nThat day became one of those memories I will never forget.\n\nThank you for standing strong when our story needed strength.`,null],
+['College days: seamless fights, unlimited love','Meeting you was an adventure of its own.',`Our college days weren’t always easy.\n\nSometimes we met at Aavin Palagam, sometimes at little shops, and sometimes at mini cafeterias.\n\nWe had to meet like strangers, even though you were becoming one of the most important people in my life.\n\nAnd our timing?\n\nYou would reach the place early, ready and waiting. Meanwhile, my bus would decide to test my patience and arrive late.\n\nYou were the one who managed your time, found a way to make our meetings possible, and sometimes even told little lies about being late when you reached home.\n\nThose little efforts meant more to me than I could ever explain.\n\nWe fought, we laughed, we missed each other, and we kept finding ways to meet.\n\nOur college days were a mixture of difficult circumstances, countless memories, and a kind of love that kept growing.`,'k18','Seamless fights. Unlimited love.',['Aavin Palagam','Little shops','Mini cafeterias','Late buses','Secret meetings','Fights and reconciliations']],
+['Our Bangalore chapter','From finding ways to meet to finding places to go together.',`After we both got jobs in Bangalore, our story entered another chapter.\n\nYou continued to care for me in your own way, like a loyal companion and a friend who genuinely wants the best for me.\n\nNow we have new places, new memories, and little routines that make ordinary days feel special.\n\nOur cafeteria visits, local food spots, Malayali tea shops, Cafe Grills, Annapoorna, Empire, Meghana Foods, Narmada Foods, and Wonderla.\n\nIt isn’t always about where we go.\n\nIt is about the little moments, the conversations, the laughter, and having you there.\n\nFrom our school-day conversations to the life we are experiencing in Bangalore, every chapter has given me another reason to be grateful that you are in my life.\n\nAnd Pattu, I hope we still have countless chapters left to write.`,null,null,null,['k17','k8','k16','k14','k13','k12']]];
+const phd=k=>`<div class="ph" data-k="${k}"></div>`;
+$('#tl').innerHTML=CH.map(c=>`<article class="ch glass rv"><p class="when">${c[0]}</p><h3>${c[1]}</h3>${paras(c[2])}${c[4]?'<p class="tag">'+c[4]+'</p>':''}${c[5]?'<div class="pins">'+c[5].map(p=>'<span class="pin">📍 '+p+'</span>').join('')+'</div>':''}${c[3]?phd(c[3]):''}${c[6]?'<div class="collage">'+c[6].map(phd).join('')+'</div>':''}</article>`).join('');
+document.querySelectorAll('[data-k]').forEach(e=>fill(e,e.dataset.k,'A memory of Pattu'));
+
+/* little things */
+const LT=[['Your loyalty','The kind of loyalty that makes me feel grateful to have you in my life.'],['Your caring heart','The way you care about the people you love, even when you have your own things to handle.'],['Your kindness','The goodness in you that makes ordinary moments feel special.'],['Your childlike side','The playful, cute, little-you moments that make you uniquely Pattu.'],['Your strength','The way you manage difficult situations even when things aren’t easy.'],['Your presence','Sometimes you don’t need to do anything extraordinary. Just being you is enough.']];
+$('#cards').innerHTML=LT.map(c=>`<div class="glass card rv">${ICON}<h3>${c[0]}</h3><p>${c[1]}</p></div>`).join('');
+
+/* gallery + lightbox */
+let cur=0;
+$('#gal').innerHTML=GAL.map((g,i)=>`<button class="gi rv" data-i="${i}" aria-label="Open photo ${i+1}: ${g.cap}"><div class="ph" style="--r:${g.r}"></div><span>${g.cap}</span></button>`).join('');
+document.querySelectorAll('.gi').forEach((b,i)=>{fill(b.querySelector('.ph'),GAL[i].src,GAL[i].cap);b.onclick=()=>show(i)});
+function show(i){cur=(i+GAL.length)%GAL.length;fill($('#lbph'),GAL[cur].src,GAL[cur].cap);$('#lbcap').textContent=GAL[cur].cap;$('#lb').classList.add('on');$('#close').focus()}
+function hide(){$('#lb').classList.remove('on')}
+$('#prev').onclick=()=>show(cur-1);$('#next').onclick=()=>show(cur+1);$('#close').onclick=hide;
+$('#lb').addEventListener('click',e=>{if(e.target.id==='lb')hide()});
+addEventListener('keydown',e=>{if(!$('#lb').classList.contains('on'))return;if(e.key==='Escape')hide();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+
+/* envelope */
+$('#letter').innerHTML=`<p class="script" style="font-size:2.2rem;margin:0">Happy Birthday, my Pattu.</p>`+paras(`I don’t think words will ever be enough to explain how much you mean to me.\n\nThank you for the friendship that grew into something so precious, for your loyalty, for your care, for your kindness, and for all the little things that make you who you are.\n\nThank you for every effort you made, every difficult moment you managed, every little memory we created, and every ordinary day you made special.\n\nWe have had our fights, our difficult days, our late meetings, and our countless little adventures. Through every chapter, you have remained someone incredibly special in my life.\n\nI hope this new year brings you happiness, peace, good health, beautiful opportunities, and all the love you deserve.\n\nNever forget how precious you are.\n\nHappy Birthday, Abaranji Vedha S S.\n\nHappy Birthday, my Pattu. 💜`);
+$('#open').onclick=function(){const o=$('#letter').classList.toggle('open');$('#env').classList.toggle('open',o);this.setAttribute('aria-expanded',o);this.textContent=o?'Close the letter ♡':'Open Your Little Surprise ♡'};
+
+/* countdown to Oct 29 2026, local time */
+const T=new Date(2026,9,29,0,0,0),D=new Date(2026,9,30,0,0,0);
+function tick(){const n=new Date();let d=T-n;
+ if(d<=0){$('#cdmsg').textContent=n<D?'It’s your day, Pattu! Happy Birthday! 💜':'I hope your birthday was beautiful, Pattu. Happy Birthday! 💜';$('#cd').style.display='none';return}
+ const v=[['Days',Math.floor(d/864e5)],['Hours',Math.floor(d/36e5)%24],['Minutes',Math.floor(d/6e4)%60],['Seconds',Math.floor(d/1e3)%60]];
+ $('#cd').innerHTML=v.map(x=>`<div class="glass"><b>${String(x[1]).padStart(2,'0')}</b><small>${x[0]}</small></div>`).join('')}
+tick();setInterval(tick,1000);
+
+/* finale */
+$('#fin').innerHTML=paras(`To my Pattu,\n\nFrom those school-day conversations to our little meetings during college, from our seamless fights to our unlimited love, and from all those difficult days to our Bangalore memories, you have become a part of my story that I will always cherish.\n\nI may never find the perfect words to describe you.\n\nMaybe I don’t need to.\n\nBecause some people are not meant to be explained in words. They are meant to be appreciated, cared for, and loved through the little things we do.\n\nYou are one of those people.\n\nThank you for being you.\n\nHappy Birthday, my Pattu.\n\nMay your smile always find a reason to stay, may life be gentle with your heart, and may the beautiful person you are always be surrounded by love.\n\nYou will always be my Pattu.`);
+
+/* gifts */
+document.querySelectorAll('.gift').forEach(b=>b.onclick=()=>{document.querySelectorAll('.gift').forEach(x=>x.classList.remove('pick'));b.classList.add('pick');$('#giftmsg').classList.add('on')});
+
+/* songs: put each song’s audio data in AUD to enable play/pause */
+const AUD={pavazha:'audio/pavazha-malli.mp3',radhima:'audio/radhima.mp3'};let curB=null;
+document.querySelectorAll('.sp').forEach(c=>{const id=c.dataset.id,b=c.querySelector('.pbtn'),bar=c.querySelector('.bar i'),m=$('#plmsg');
+ b.onclick=()=>{if(!AUD[id]){m.textContent='The audio for this song hasn’t been added yet.';return}
+ m.textContent='';
+ if(!c.a){c.a=new Audio(AUD[id]);c.a.ontimeupdate=()=>{bar.style.width=(c.a.currentTime/c.a.duration*100||0)+'%'};c.a.onended=()=>{b.textContent='▶'}}
+ if(c.a.paused){if(curB&&curB!==c){curB.a.pause();curB.querySelector('.pbtn').textContent='▶'}c.a.play();b.textContent='❚❚';curB=c}else{c.a.pause();b.textContent='▶'}}});
+
+/* petals */
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches){const n=innerWidth<600?10:18;for(let i=0;i<n;i++){const p=document.createElement('i');p.className='petal'+(i%3==0?' g':'');p.style.cssText=`left:${Math.random()*100}%;animation-duration:${14+Math.random()*14}s;animation-delay:${-Math.random()*20}s`;document.body.appendChild(p)}}
+
+/* reveal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach((e,i)=>{if(e.classList.contains('line'))e.style.transitionDelay='.2s';io.observe(e)});
+
+/* birthday decor */
+const FL=['#B8A1E3','#D4B779','#fff','#9a7bd0','#E6DDF7'];
+document.querySelectorAll('.bunting').forEach(b=>{b.innerHTML=Array.from({length:14},(_,i)=>`<i style="border-top-color:${FL[i%5]}"></i>`).join('')});
+$('.balloons').innerHTML=Array.from({length:9},(_,i)=>`<i style="--c:${FL[i%5]};left:${4+i*11}%;animation-duration:${12+(i*7%9)}s;animation-delay:${-i*2.3}s"></i>`).join('');
+function confetti(){if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;const c=$('#conf'),x=c.getContext('2d');c.width=innerWidth;c.height=innerHeight;const P=Array.from({length:150},()=>({x:innerWidth/2,y:innerHeight*.6,vx:(Math.random()-.5)*15,vy:-Math.random()*17-4,s:5+Math.random()*6,r:Math.random()*6,c:FL[Math.random()*5|0]}));let t=0;(function f(){x.clearRect(0,0,c.width,c.height);P.forEach(p=>{p.vy+=.35;p.x+=p.vx;p.y+=p.vy;p.r+=.2;x.fillStyle=p.c;x.save();x.translate(p.x,p.y);x.rotate(p.r);x.fillRect(-p.s/2,-p.s/4,p.s,p.s/2);x.restore()});if(++t<200)requestAnimationFrame(f);else x.clearRect(0,0,c.width,c.height)})()}
+
+/* intro */
+const go=()=>$('#intro').classList.add('gone');
+$('#enter').onclick=()=>{confetti();go()};$('#skip').onclick=go;
+</script>
+</body>
+</html>
